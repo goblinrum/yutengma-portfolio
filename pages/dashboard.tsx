@@ -6,6 +6,7 @@ import GitHub from 'components/metrics/Github';
 import Unsplash from 'components/metrics/Unsplash';
 import YouTube from 'components/metrics/Youtube';
 import TopTracks from 'components/TopTracks';
+import NowPlaying from 'components/NowPlaying';
 
 export default function Dashboard() {
   return (
@@ -31,6 +32,7 @@ export default function Dashboard() {
             </Link>
           </p>
         </div>
+        <NowPlaying />
         <div className="flex flex-col w-full">
           <Unsplash />
           <YouTube />

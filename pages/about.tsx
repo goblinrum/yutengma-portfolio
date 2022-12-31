@@ -16,80 +16,61 @@ export default function About() {
           <h2>Links</h2>
           <ul>
             <li>
-              Twitter: <a href="https://twitter.com/leeerob">@leeerob</a>
+              GitHub: <a href="https://github.com/goblinrum">@goblinrum</a>
             </li>
             <li>
-              GitHub: <a href="https://github.com/leerob">@leerob</a>
-            </li>
-            <li>
-              Website: <Link href="https://leerob.io">https://leerob.io</Link>
-            </li>
-            <li>
-              LinkedIn:{' '}
-              <a href="https://www.linkedin.com/in/leeerob/">
-                https://www.linkedin.com/in/leeerob
+              Linked
+              <a href="http://linkedin.com/in/ryan-ma-30/">
+                In
               </a>
             </li>
+            <li>
+              Email: <a href="mailto:ryan.ma3011@berkeley.edu">ryan.ma3011 (at) berkeley.edu</a>
+            </li>
+            {/* <li>
+              Resume: <iframe src='/public/Ma, Ryan - Resume.pdf' />
+            </li> TODO: Add route for backend to fetch resume*/}
           </ul>
           <h2>Bio</h2>
-          <h3>Job Title</h3>
-          <p>Ryan Ma, Student at UC Berkeley</p>
-          <h3>Long, 3rd Person</h3>
           <p>
-            {/* Lee Robinson is the VP of Developer Experience at{' '}
-            <a href="http://vercel.com/">Vercel</a>, where he helps developers
-            build a faster web and leads the Next.js community. He leads the
-            community for the React framework Next.js and is an open-source
-            contributor. An educator, writer, and speaker, Lee has created
-            courses on React, Next.js, and web development. */}
+          Hi! I'm Ryan. I like to dabble in all things technology. My interests include building computers, 
+          web development (and security), and also reaches into the lower level systems and circuits. 
+          While most of my experience has been in web development, I'm slowly working my way through 
+          low level systems programming, digital logic and integrated circuits, computer architecture, 
+          and even analog circuits. I love the feeling of building something with my own hands and making it work.
           </p>
-          <h3>Long, 1st Person</h3>
-          <p>
-            Hey, I'm Lee. I'm the VP of Developer Experience at{' '}
-            <a href="https://vercel.com/">Vercel</a>, where my team helps
-            developers build a faster web. I'm a Next.js contributor and help
-            lead our open-source communities. I'm passionate about frontend
-            development and have created courses on React, Next.js, and web
-            development. I'm an advisor and investor in early stage startups.
-          </p>
-          <h3>Short, 3rd Person</h3>
-          <p>
-            Lee Robinson is the VP of Developer Experience at{' '}
-            <a href="http://vercel.com/">Vercel</a>, where he helps developers
-            build a faster web.
-          </p>
-          <h3>Short, 1st Person</h3>
-          <p>
-            Hey, I'm Lee. I'm the VP of Developer Experience at{' '}
-            <a href="https://vercel.com/">Vercel</a>, where my team helps
-            developers build a faster web.
-          </p>
-          <h3>Education</h3>
-          <p>
-            Lee Robinson graduated from Iowa State University with a B.S. in
-            Computer Engineering.
-          </p>
-          <h2>Headshots</h2>
-          <div className="flex space-x-8">
-            <a href="/avatar.jpg">
-              <Image
-                alt="Lee Robinson headshot"
-                width={400}
-                quality={100}
-                src={avatar}
-                className="rounded-md"
-              />
-            </a>
-            <a href="/avatar-bw.jpg">
-              <Image
-                alt="Lee Robinson headshot"
-                width={400}
-                quality={100}
-                src={avatarBW}
-                className="rounded-md"
-              />
-            </a>
-          </div>
+          <h2>Industry Experience</h2>
+          <h4>Software Engineer at {' '}
+            <a href="https://tecmend.com">Tecmend</a>
+          </h4>
+          <h6><em>January 2021 - Present</em></h6>
+          <p>Learning on the job. Fast paced startup environment. Designing custom backend solutions. 
+            My work at Tecmend has been a mix of bug fixing/feature development and designing custom client API integrations. 
+            I'm never sure what I'm up for and each case is different, but I'm always looking for new challenges. 
+            Here's a quick list of my work:</p>
+          <ul>
+            <li>Senmonni, a MERN e-wallet application MVP and Android app for off-ramp customers in Belize</li>
+            <li>On the Fly QuickBooks web connector, a React/Django application providing custom integrations between On The Fly's POS and QuickBooks, including SSO using QuickBooks OAuth login API</li>
+            <li>Debugging and feature development for LearningRoom, a custom React/GraphQL LMS platform</li>
+            <li>Debugging and feature development for DLM Sales Value Mapping, a lean manufacturing value calculator in React and Django.</li>
+            <li>PDF Invoice reader, a PDF scraper automating invoice recording to Hubspot and QuickBooks, saving MSBs time and money</li>
+            <li>Streamline the process of building custom API integrations for professional applications (HubSpot, QuickBooks, WordPress, Canvas, and customer-provided APIs) using Django and MySQL</li>
+            <li>Manage automation and sysadmin tasks for the company's internal systems</li>
+          </ul>
+          <h4>Software Engineer Intern at {' '}
+            <a href="https://instapathbio.com">Instpath</a> 
+          </h4>
+          <h6><em>June 2021 - Present</em></h6>
+          <p>As an intern, I was given the task to help build a new webapp for clients to view pathology images. 
+            The challenges? The images were often large (2-3 GB each!), and each image needs to be tiled and displayed as {''}
+            <a href="https://en.wikipedia.org/wiki/Deep_Zoom">Deep Zoom</a> images.
+            Here are a few things that I did as part of the process:</p>
+          <ul>
+            <li>Built a Django backend for the company’s webapp to view deep zoom pathology images. Includes features such as a custom authentication/permission management scheme, celery task queue, and image processing with libvips and histomicsTK.</li>
+            <li>Incorporated a CPU intensive processing and image tiling process in Django with multithreading and a task queue. The results were uploaded to AWS S3 and served from there. Designed the backend with a more asynchronous architecture to reflect processing status on the frontend.</li>
+            <li>Dockerized the deployment of the webapp and automated the deploy of the frontend, backend, Postgres, Let's Encrypt, Nginx, and Github Actions</li>
+            <li>Learned how efficient algorithms and design apply to the medical fields</li>
+          </ul>
         </div>
       </div>
     </Container>
