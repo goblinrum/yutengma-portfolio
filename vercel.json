@@ -51,10 +51,6 @@
       "destination": "https://www.youtube.com/channel/UCZMli3czZnd1uoc1ShTouQw/live"
     },
     {
-      "source": "/newsletter/(.*)",
-      "destination": "/newsletter"
-    },
-    {
       "source": "/blog/monorepo-lerna-yarn-workspaces",
       "destination": "/blog/turborepo-design-system-monorepo"
     },

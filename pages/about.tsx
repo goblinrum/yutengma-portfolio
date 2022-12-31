@@ -7,7 +7,7 @@ import avatarBW from 'public/avatar-bw.jpg';
 
 export default function About() {
   return (
-    <Container title="About – Lee Robinson">
+    <Container title="About – Ryan Ma">
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
           About Me
@@ -33,15 +33,15 @@ export default function About() {
           </ul>
           <h2>Bio</h2>
           <h3>Job Title</h3>
-          <p>Lee Robinson, VP of Developer Experience at Vercel</p>
+          <p>Ryan Ma, Student at UC Berkeley</p>
           <h3>Long, 3rd Person</h3>
           <p>
-            Lee Robinson is the VP of Developer Experience at{' '}
+            {/* Lee Robinson is the VP of Developer Experience at{' '}
             <a href="http://vercel.com/">Vercel</a>, where he helps developers
             build a faster web and leads the Next.js community. He leads the
             community for the React framework Next.js and is an open-source
             contributor. An educator, writer, and speaker, Lee has created
-            courses on React, Next.js, and web development.
+            courses on React, Next.js, and web development. */}
           </p>
           <h3>Long, 1st Person</h3>
           <p>

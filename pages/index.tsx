@@ -15,31 +15,30 @@ export default function Home() {
           <div className="flex flex-col-reverse sm:flex-row items-start">
             <div className="flex flex-col pr-8">
               <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
-                Lee Robinson
+                Ryan Ma
               </h1>
               <h2 className="text-gray-700 dark:text-gray-200 mb-4">
-                VP of Developer Experience at{' '}
-                <span className="font-semibold">Vercel</span>
+                Computer Science Student at UC Berkeley
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-16">
-                Helping developers build a faster web. Teaching about web
-                development, serverless, and React / Next.js.
+              Developing away at backends, servers, databases and life. 
+              Exploring the world of systems, computer architecture, and microelectronics.
               </p>
             </div>
             <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
               <Image
-                alt="Lee Robinson"
-                height={176}
-                width={176}
+                alt="Ryan Ma"
+                height={200}
+                width={200}
                 src="/avatar.jpg"
                 sizes="30vw"
                 priority
-                className="rounded-full filter grayscale"
+                className="rounded-full w-full h-full"
               />
             </div>
           </div>
 
-          <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
+          {/* <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
             Featured Posts
           </h3>
           <div className="flex gap-6 flex-col md:flex-row">
@@ -58,8 +57,8 @@ export default function Home() {
               slug="react-state-management"
               gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
             />
-          </div>
-          <Link
+          </div> */}
+          {/* <Link
             href="/blog"
             className="flex items-center mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6"
           >
@@ -80,9 +79,9 @@ export default function Home() {
                 />
               </svg>
             </>
-          </Link>
+          </Link> */}
 
-          <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-16 text-black dark:text-white">
+          {/* <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-16 text-black dark:text-white">
             Learn React & Next.js
           </h3>
           <p className="text-gray-600 dark:text-gray-400 mb-4">
@@ -136,8 +135,8 @@ export default function Home() {
               />
             </svg>
           </a>
-          <span className="h-16" />
-          <Subscribe />
+          <span className="h-16" /> */}
+          {/* <Subscribe /> */}
         </div>
       </Container>
     </Suspense>
