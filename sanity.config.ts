@@ -5,7 +5,7 @@ import { markdownSchema } from 'sanity-plugin-markdown';
 export default createConfig({
   name: 'default',
   title: 'yutengma.me',
-  projectId: '56a8ffnw',
+  projectId: 'g4afoy7p',
   dataset: 'production',
   plugins: [deskTool(), markdownSchema()],
   schema: {
@@ -51,9 +51,9 @@ export default createConfig({
         ]
       },
       {
-        name: 'snippet',
+        name: 'project',
         type: 'document',
-        title: 'Snippet',
+        title: 'Project',
         fields: [
           {
             name: 'title',
@@ -74,14 +74,19 @@ export default createConfig({
             type: 'markdown'
           },
           {
-            name: 'description',
-            title: 'Description',
+            name: 'excerpt',
+            title: 'Excerpt',
             type: 'string'
           },
           {
-            name: 'logo',
-            title: 'Logo',
+            name: 'coverImage',
+            title: 'Cover Image',
             type: 'image'
+          },
+          {
+            name: 'date',
+            title: 'Date',
+            type: 'datetime'
           }
         ]
       }

@@ -57,7 +57,7 @@ export default function Home() {
                 GitHub
               </Link>
               <Link
-                href="/public/Ma, Ryan - Resume.pdf"
+                href="/Ma, Ryan - Resume.pdf"
                 className="flex items-center justify-center w-full sm:w-auto h-12 px-6 mb-4 sm:mb-0 sm:mr-4 text-lg font-medium rounded-lg text-white bg-gray-800 hover:bg-gray-900 transition-colors duration-200"
               >
                 Resume
@@ -162,7 +162,6 @@ export default function Home() {
             </svg>
           </a>
           <span className="h-16" /> */}
-          {/* <Subscribe /> */}
         </div>
       </Container>
     </Suspense>

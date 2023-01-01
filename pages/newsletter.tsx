@@ -16,7 +16,6 @@ export default function Newsletter() {
           on and writing about. I frequently share some of my favorite articles
           I've read, as well as anything fascinating about technology.
         </p>
-        <Subscribe />
       </div>
     </Container>
   );

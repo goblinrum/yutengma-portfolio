@@ -18,16 +18,15 @@ export default function Blog({
   return (
     <Container
       title="Blog – Ryan Ma"
-      description="Thoughts on the software industry, programming, tech, videography, music, and my personal life."
+      description="Somewhere to dump all my thoughts"
     >
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
           Blog
         </h1>
         <p className="mb-4 text-gray-600 dark:text-gray-400">
-          {`I've been writing online since 2014, mostly about web development and tech careers.
-            In total, I've written ${posts.length} articles on my blog.
-            Use the search below to filter by title.`}
+          {`This is just somewhere for me to dump all my thoughts and be a recordbook for myself. I'm not a professional writer, 
+          so please excuse any typos and grammatical errors. Feel free to browse my total of ${posts.length} posts.`}
         </p>
         <div className="relative w-full mb-4">
           <input
@@ -58,20 +57,20 @@ export default function Blog({
               Most Popular
             </h3>
             <BlogPost
-              title="Rust Is The Future of JavaScript Infrastructure"
-              excerpt="Why is Rust being used to replace parts of the JavaScript web ecosystem like minification (Terser), transpilation (Babel), formatting (Prettier), bundling (webpack), linting (ESLint), and more?"
-              slug="rust"
+              title="Development Timeline for this Website"
+              excerpt="What I plan to do with this personal site"
+              slug="timeline"
             />
-            <BlogPost
+            {/* <BlogPost
               title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
               excerpt="A deep-dive on everything I've learned in the past year building style guides, design systems, component libraries, and their best practices."
               slug="style-guides-component-libraries-design-systems"
-            />
-            <BlogPost
+            /> */}
+            {/* <BlogPost
               title="Building a Design System Monorepo with Turborepo"
               excerpt="Manage multiple packages with a shared build, test, and release process using Turborepo, Changesets, Storybook, and more."
               slug="turborepo-design-system-monorepo"
-            />
+            /> */}
           </>
         )}
         <Suspense fallback={null}>

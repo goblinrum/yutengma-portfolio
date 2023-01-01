@@ -50,26 +50,6 @@ export default function BlogLayout({
             {children}
           </div>
           <div className="mt-8">
-            <Subscribe />
-          </div>
-          <div className="text-sm text-gray-700 dark:text-gray-300">
-            <a
-              href={`https://mobile.twitter.com/search?q=${encodeURIComponent(
-                `https://yutengma.me/blog/${post.slug}`
-              )}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {'Discuss on Twitter'}
-            </a>
-            {` • `}
-            <a
-              href="https://github.com/leerob/yutengma.me/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {'Suggest Change'}
-            </a>
           </div>
         </Suspense>
       </article>

@@ -55,45 +55,6 @@ export default function Uses() {
             <li>Laptop: Lenovo Flex 14 (Ryzen 7 5700u)</li>
             <li>Phone: LG V60</li>
           </ul>
-          <h3 id="audio-video">Audio / Video</h3>
-          <ul>
-            <li>Sony A7III (28-50mm, 35mm f1.8)</li>
-            <li>Shure SM7B + Elgato Wave XLR + Boom</li>
-            <li>Elgato Camlink</li>
-            <li>Logitech C920</li>
-            <li>Elgato Key Light (x2)</li>
-            <li>Elgato Master Mount</li>
-            <li>Aputure Mark 2 120D II</li>
-            <li>Aputure Light Dome II</li>
-          </ul>
-          <h3 id="software">Software</h3>
-          <ul>
-            <li>1Password</li>
-            <li>Spotify</li>
-            <li>CleanShot X</li>
-            <li>RetroClip</li>
-            <li>Grammarly</li>
-            <li>Texts</li>
-            <li>Raycast</li>
-            <li>Screenflow</li>
-          </ul>
-          <h3 id="music">Music</h3>
-          <ul>
-            <li>Yamaha P-105 Piano</li>
-            <li>Roland TD-20 V-Drums</li>
-            <li>Roland AC-60</li>
-            <li>Shure SM58</li>
-            <li>Martin Acoustic Guitar (X-Series)</li>
-          </ul>
-          <h3 id="other-tech">Other Tech</h3>
-          <ul>
-            <li>Apple Airpods Pro</li>
-            <li>Apple Watch</li>
-            <li>Apple iPhone</li>
-            <li>Lacie USB-C External HDD</li>
-            <li>Kindle</li>
-            <li>Tesla Model 3</li>
-          </ul>
         </div>
       </article>
     </Container>
