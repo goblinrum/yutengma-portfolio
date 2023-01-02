@@ -1,10 +1,10 @@
 import RSS from 'rss';
 import { sanityClient } from 'lib/sanity-server';
-import { indexQuery } from 'lib/queries';
+import { indexQuery, indexProjectQuery } from 'lib/queries';
 
 export async function getServerSideProps({ res }) {
   const feed = new RSS({
-    title: 'Lee Robinson',
+    title: 'Ryan Ma',
     site_url: 'https://yutengma.me',
     feed_url: 'https://yutengma.me/feed.xml'
   });
@@ -16,6 +16,16 @@ export async function getServerSideProps({ res }) {
       url: `https://yutengma.me/blog/${post.slug}`,
       date: post.date,
       description: post.excerpt
+    });
+  });
+
+  const allProjects = await sanityClient.fetch(indexProjectQuery);
+  allProjects.map((project) => {
+    feed.item({
+      title: project.title,
+      url: `https://yutengma.me/projects/${project.slug}`,
+      date: project.date,
+      description: project.excerpt
     });
   });
 

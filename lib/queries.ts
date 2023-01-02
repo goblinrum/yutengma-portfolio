@@ -32,33 +32,36 @@ export const postBySlugQuery = `
 
 export const postUpdatedQuery = `*[_type == "post" && _id == $id].slug.current`;
 
-const snippetFields = `
+const projectFields = `
   _id,
   title,
-  description,
-  logo,
+  date,
+  excerpt,
+  coverImage,
   "slug": slug.current,
 `;
 
-export const allSnippetsQuery = `
-*[_type == "snippet"] | order(date desc, _updatedAt desc) {
-  ${snippetFields}
+export const indexProjectQuery = `
+*[_type == "project"] | order(date desc, _updatedAt desc) {
+  ${projectFields}
 }`;
 
-export const snippetsQuery = `
+export const projectQuery = `
 {
-  "snippet": *[_type == "snippet" && slug.current == $slug] | order(_updatedAt desc) [0] {
+  "project": *[_type == "project" && slug.current == $slug] | order(_updatedAt desc) [0] {
     content,
-    ${snippetFields}
+    ${projectFields}
   }
 }`;
 
-export const snippetSlugsQuery = `
-*[_type == "snippet" && defined(slug.current)][].slug.current
+export const projectSlugsQuery = `
+*[_type == "project" && defined(slug.current)][].slug.current
 `;
 
-export const snippetBySlugQuery = `
-*[_type == "snippet" && slug.current == $slug][0] {
-  ${snippetFields}
+export const projectBySlugQuery = `
+*[_type == "project" && slug.current == $slug][0] {
+  ${projectFields}
 }
 `;
+
+export const projectUpdatedQuery = `*[_type == "project" && _id == $id].slug.current`;

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import Container from '../components/Container';
 import BlogPostCard from '../components/BlogPostCard';
-import Subscribe from '../components/Subscribe';
+import ProjectPostCard from '../components/ProjectPostCard';
 import VideoCard from '../components/VideoCard';
 
 export default function Home() {
@@ -14,22 +14,22 @@ export default function Home() {
         <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
           <div className="flex flex-col-reverse sm:flex-row items-start">
             <div className="flex flex-col pr-8">
-              <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
+              <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-2 text-black dark:text-white">
                 Ryan Ma
               </h1>
               <h2 className="text-gray-700 dark:text-gray-200 mb-4">
                 Computer Science Student at UC Berkeley
               </h2>
-              <p className="text-gray-600 dark:text-gray-400 mb-16">
+              <p className="text-gray-600 dark:text-gray-400 mb-8">
               Developing away at backends, databases and life. 
               Exploring the world of systems, computer architecture, and microelectronics.
               </p>
             </div>
-            <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
+            <div className="w-[80px] sm:w-[176px] relative mb-5 sm:mb-0 mr-auto">
               <Image
                 alt="Ryan Ma"
-                height={200}
-                width={200}
+                height={176}
+                width={80}
                 src="/avatar.jpg"
                 sizes="30vw"
                 priority
@@ -37,12 +37,44 @@ export default function Home() {
               />
             </div>
           </div>
+          {/* short summary section about my current interests and classes */}
+          <h6 className="font-bold text-2xl md:text-3xl tracking-tight mb-4 mt-4 text-black dark:text-white">
+            A bit about me:
+          </h6>
+          <div className="text-gray-600 dark:text-gray-400 mb-8">
+            <li>I am currently a Lab ASE for 
+              <a href="https://eecs16b.org" className='text-blue-600'> EECS16B: Designing Information Devices and Systems II</a>
+            </li>
+            <li>Most of my experience is in backend development, specifically in <em>Django, Express/Node and RESTful APIs</em>. I am also 
+                interested in lower-level systems, security, and VLSI.</li>
+            <li>Currently taking: CS152: Advanced Computer Architecture, CS186: Databases, and EE120: Signals and Systems</li>
+          </div>
           {/* Quick links section for LinkedIn, Github, and resume */}
+          <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
+            Featured
+          </h3>
+          <div className="flex gap-6 flex-col md:flex-row">
+            <ProjectPostCard
+              title="Three-Stage Pipelined RISC-V CPU"
+              slug="cpu"
+              gradient="from-[#D8B48E] to-[#819CF8]"
+            />
+            <BlogPostCard
+              title="Development Timeline for this Website"
+              slug="timeline"
+              gradient="from-[#6E27B7] via-[#3B92F6] to-[#9393EA]"
+            />
+            {/* <BlogPostCard
+              title="Past, Present, and Future of React State Management"
+              slug="react-state-management"
+              gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
+            /> */}
+          </div>
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-16 text-black dark:text-white">
             Quick Links
           </h3>
           <br></br>
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full mb-16">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full">
               <Link
                 href="https://www.linkedin.com/in/ryan-ma-30/"
@@ -52,38 +84,18 @@ export default function Home() {
               </Link>
               <Link
                 href="https://github.com/goblinrum"
-                className="flex items-center justify-center w-full sm:w-auto h-12 px-6 mb-4 sm:mb-0 sm:mr-4 text-lg font-medium rounded-lg text-white bg-gray-800 hover:bg-gray-900 transition-colors duration-200"
+                className="flex items-center justify-center w-full sm:w-auto h-12 px-6 mb-4 sm:mb-0 sm:mr-4 text-lg font-medium rounded-lg text:black dark:text-white bg-gray-600 dark:bg-gray-800 hover:bg-gray-900 transition-colors duration-200"
               >
                 GitHub
               </Link>
               <Link
                 href="/Ma, Ryan - Resume.pdf"
-                className="flex items-center justify-center w-full sm:w-auto h-12 px-6 mb-4 sm:mb-0 sm:mr-4 text-lg font-medium rounded-lg text-white bg-gray-800 hover:bg-gray-900 transition-colors duration-200"
+                className="flex items-center justify-center w-full sm:w-auto h-12 px-6 mb-4 sm:mb-0 sm:mr-4 text-lg font-medium rounded-lg text:black dark:text-white bg-gray-600 dark:bg-gray-800 hover:bg-gray-900 transition-colors duration-200"
               >
                 Resume
               </Link>
             </div>
           </div>
-          {/* <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
-            Featured Posts
-          </h3>
-          <div className="flex gap-6 flex-col md:flex-row">
-            <BlogPostCard
-              title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
-              slug="style-guides-component-libraries-design-systems"
-              gradient="from-[#D8B4FE] to-[#818CF8]"
-            />
-            <BlogPostCard
-              title="Rust Is The Future of JavaScript Infrastructure"
-              slug="rust"
-              gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
-            />
-            <BlogPostCard
-              title="Past, Present, and Future of React State Management"
-              slug="react-state-management"
-              gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
-            />
-          </div> */}
           {/* <Link
             href="/blog"
             className="flex items-center mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6"

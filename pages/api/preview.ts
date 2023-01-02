@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { postBySlugQuery } from 'lib/queries';
+import { postBySlugQuery, projectBySlugQuery } from 'lib/queries';
 import { previewClient } from 'lib/sanity-server';
 
 export default async function handler(
@@ -17,7 +17,11 @@ export default async function handler(
     slug: req.query.slug
   });
 
-  if (!post) {
+  const project = await previewClient.fetch(projectBySlugQuery, {
+    slug: req.query.slug
+  });
+
+  if (!post && !project) {
     return res.status(401).json({ message: 'Invalid slug' });
   }
 

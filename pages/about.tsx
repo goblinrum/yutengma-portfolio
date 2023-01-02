@@ -71,6 +71,20 @@ export default function About() {
             <li>Dockerized the deployment of the webapp and automated the deploy of the frontend, backend, Postgres, Let's Encrypt, Nginx, and Github Actions</li>
             <li>Learned how efficient algorithms and design apply to the medical fields</li>
           </ul>
+          <h2>Activities</h2>
+          <h4>IEEE Berkeley Student Branch - Officer</h4>
+          <h6><em>September 2021 - Present</em></h6>
+          <p>I started out as a website officer. I was tasked to do the following:
+            <ul>
+              <li>Redesign a club-hosted startup fair website using the MERN stack. I worked on a team of three (and focused on backend)
+                to build a website that would allow startups and students to register for one-on-one timeslots to talk about recruiting and internships.
+                </li>
+            </ul>
+            I then was a Tech-Ops officer, where I was tasked to do the following:
+              <li>Lead a student-facing project team to work on Berkeley Bias, a MERN stack forum site for Berkeley students.</li>
+              <li>Teach the project team basic software engineering skills including Git, Unit/Integration testing, MERN, and Docker. </li>
+              <li>Help with internal organization of a campus-wide hackathon for Spring 2023.</li>
+          </p>
         </div>
       </div>
     </Container>

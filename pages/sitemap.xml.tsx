@@ -1,5 +1,5 @@
 import { sanityClient } from 'lib/sanity-server';
-import { postSlugsQuery } from 'lib/queries';
+import { postSlugsQuery, projectSlugsQuery } from 'lib/queries';
 
 const createSitemap = (slugs) => `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -22,13 +22,14 @@ export async function getServerSideProps({ res }) {
       '',
       'about',
       'blog',
-      'dashboard',
-      'guestbook',
-      'newsletter',
-      'tweets',
-      'uses'
+      'projects',
+      'teaching',
+      'fun'
     ]
   ];
+
+  const allProjects = await sanityClient.fetch(projectSlugsQuery);
+  allPages.push(...allProjects.map((slug) => `projects/${slug}`));
 
   res.setHeader('Content-Type', 'text/xml');
   res.setHeader(
