@@ -13,8 +13,8 @@ export default function BlogPost({
   title: string;
   excerpt: string;
 }) {
-  const { data } = useSWR<Views>(`/api/views/${slug}`, fetcher);
-  const views = data?.total;
+  // const { data } = useSWR<Views>(`/api/views/${slug}`, fetcher);
+  // const views = data?.total;
 
   return (
     <Link href={`/blog/${slug}`} className="w-full">
