@@ -81,9 +81,11 @@ export default function About() {
                 </li>
             </ul>
             I then was a Tech-Ops officer, where I was tasked to do the following:
+            <ul>
               <li>Lead a student-facing project team to work on Berkeley Bias, a MERN stack forum site for Berkeley students.</li>
               <li>Teach the project team basic software engineering skills including Git, Unit/Integration testing, MERN, and Docker. </li>
               <li>Help with internal organization of a campus-wide hackathon for Spring 2023.</li>
+            </ul>
           </p>
         </div>
       </div>

@@ -54,6 +54,7 @@ export default function Uses() {
             </li>
             <li>Laptop: Lenovo Flex 14 (Ryzen 7 5700u)</li>
             <li>Phone: LG V60</li>
+            <li>Bike: Trek FX 7.4</li>
           </ul>
         </div>
       </article>
