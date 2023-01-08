@@ -3,7 +3,7 @@ import { Suspense, useState } from 'react';
 import Container from 'components/Container';
 import ProjectsPost from 'components/ProjectPost';
 import { InferGetStaticPropsType } from 'next';
-import { indexProjectQuery, indexQuery } from 'lib/queries';
+import { indexProjectQuery } from 'lib/queries';
 import { getClient } from 'lib/sanity-server';
 import { Post } from 'lib/types';
 

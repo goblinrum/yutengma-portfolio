@@ -27,7 +27,8 @@ export default async function handler(
         res.revalidate('/blog'),
         res.revalidate(`/blog/${slug}`)
       ]);
-    } else if (slug2) {
+    }
+    if (slug2) {
       await Promise.all([
         res.revalidate('/projects'),
         res.revalidate(`/projects/${slug2}`)

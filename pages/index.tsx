@@ -96,8 +96,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <p className="text-red-600 mb-8"> This site is still a heavy work in progress. I know the links to my projects don't work (yet). Also, if you think this looks like leerob.io, then you'd
-            be right. Thanks Lee for the inspiration! I have tons of ideas for this site, so I'm only using this base template is only being deployed for the time being. </p>
+          <p className="text-red-600 mb-8"> This site is still a heavy work in progress. </p>
           {/* <Link
             href="/blog"
             className="flex items-center mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6"

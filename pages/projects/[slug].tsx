@@ -38,21 +38,21 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params, preview = false }) {
-  const { post } = await getClient(preview).fetch(projectQuery, {
+  const { project } = await getClient(preview).fetch(projectQuery, {
     slug: params.slug
   });
-
-  if (!post) {
+  
+  if (!project) {
     return { notFound: true };
   }
 
-  const { html, tweetIDs, readingTime } = await mdxToHtml(post.content);
+  const { html, tweetIDs, readingTime } = await mdxToHtml(project.content);
   const tweets = await getTweets(tweetIDs);
 
   return {
     props: {
       post: {
-        ...post,
+        ...project,
         content: html,
         tweets,
         readingTime

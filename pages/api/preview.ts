@@ -24,14 +24,17 @@ export default async function handler(
   if (!post && !project) {
     return res.status(401).json({ message: 'Invalid slug' });
   }
-  if (post) {
+  if (post && !project) {
     res.setPreviewData({});
     res.writeHead(307, { Location: `/blog/${post.slug}` });
     res.end();
-  } else {
+  } else if (!post && project) {
     res.setPreviewData({});
     res.writeHead(307, { Location: `/projects/${project.slug}` });
     res.end();
+  } else {
+    // error
+    console.log("error");
   }
   
 }

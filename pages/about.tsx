@@ -74,7 +74,7 @@ export default function About() {
           <h2>Activities</h2>
           <h4><a href='https://ieee.berkeley.edu/'>IEEE Berkeley</a>{' '}Student Branch - Officer</h4>
           <h6 className='text-gray-500 dark:text-gray-300'><em>September 2021 - Present</em></h6>
-          <p>I started out as a website officer. I was tasked to do the following:
+          <p>I started out as a website officer. I was tasked to do the following: </p>
             <ul>
               <li>Redesign a club-hosted startup fair website using the MERN stack. I worked on a team of three (and focused on backend)
                 to build a website that would allow startups and students to register for one-on-one timeslots to talk about recruiting and internships.
@@ -86,7 +86,7 @@ export default function About() {
               <li>Teach the project team basic software engineering skills including Git, Unit/Integration testing, MERN, and Docker. </li>
               <li>Help with internal organization of a campus-wide hackathon for Spring 2023.</li>
             </ul>
-          </p>
+          
         </div>
       </div>
     </Container>
