@@ -53,7 +53,7 @@ export default function About() {
             <li>Manage automation and sysadmin tasks for the company's internal systems</li>
           </ul>
           <h4>Software Engineer Intern at {' '}
-            <a href="https://instapathbio.com">Instpath</a> 
+            <a href="https://instapathbio.com">Instapath</a> 
           </h4>
           <h6 className='text-gray-500 dark:text-gray-300'><em>June 2021 - Present</em></h6>
           <p>As an intern, I was given the task to help build a new webapp for clients to view pathology images. 
