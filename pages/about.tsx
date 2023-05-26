@@ -38,7 +38,7 @@ export default function About() {
           <h4>Software Engineer at {' '}
             <a href="https://tecmend.com">Tecmend</a>
           </h4>
-          <h6 className='text-gray-500 dark:text-gray-300'><em>January 2021 - Present</em></h6>
+          <h6 className='text-gray-500 dark:text-gray-300'><em>January 2021 - May 2023</em></h6>
           <p>Learning on the job. Fast paced startup environment. Designing custom backend solutions. 
             My work at Tecmend has been a mix of bug fixing/feature development and designing custom client API integrations. 
             I'm never sure what I'm up for and each case is different, but I'm always looking for new challenges. 
@@ -55,7 +55,7 @@ export default function About() {
           <h4>Software Engineer Intern at {' '}
             <a href="https://instapathbio.com">Instapath</a> 
           </h4>
-          <h6 className='text-gray-500 dark:text-gray-300'><em>June 2021 - Present</em></h6>
+          <h6 className='text-gray-500 dark:text-gray-300'><em>June 2022 - May 2023</em></h6>
           <p>As an intern, I was given the task to help build a new webapp for clients to view pathology images. 
             The challenges? The images were often large (2-3 GB each!), and each image needs to be tiled and displayed as {''}
             <a href="https://en.wikipedia.org/wiki/Deep_Zoom">Deep Zoom</a> images.
