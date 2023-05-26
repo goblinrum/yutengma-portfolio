@@ -109,7 +109,7 @@ export default function MobileMenu() {
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
             style={{ transitionDelay: '350ms' }}
           >
-            <Link href="/fun" className="flex w-auto pb-4">
+            <Link href="https://yutengma.notion.site/Where-the-Sea-Sleeps-50063d9cdb074e73b1eb111962f05fba" className="flex w-auto pb-4">
               For Fun
             </Link>
           </li>

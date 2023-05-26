@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col space-y-4">
           <Link
-            href="/fun"
+            href="https://yutengma.notion.site/Where-the-Sea-Sleeps-50063d9cdb074e73b1eb111962f05fba"
             className="text-gray-500 hover:text-gray-600 transition"
           >
             For Fun

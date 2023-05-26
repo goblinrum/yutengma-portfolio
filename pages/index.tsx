@@ -42,12 +42,9 @@ export default function Home() {
             A bit about me:
           </h6>
           <div className="text-gray-600 dark:text-gray-400 mb-8">
-            <li>I am currently a Lab ASE for 
-              <a href="https://eecs16b.org" className='text-blue-600'> EECS16B: Designing Information Devices and Systems II</a>
-            </li>
-            <li>Most of my experience is in backend development, specifically in <em>Django, Express/Node and RESTful APIs</em>. I am also 
-                interested in lower-level systems, security, and VLSI.</li>
-            <li>Currently taking: CS152: Advanced Computer Architecture, CS186: Databases, and EE120: Signals and Systems</li>
+            <li>I am currently interning at AMD (Xilinx) as a Systems Design Engineer Intern.</li>
+            <li>Most of my experience is in backend development, specifically in <em>Django, Express/Node and RESTful APIs</em>. </li>
+            <li>I am also interested in lower-level systems, security, and VLSI.</li>
           </div>
           {/* Quick links section for LinkedIn, Github, and resume */}
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">

@@ -56,11 +56,11 @@ export default function Blog({
             <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
               Most Popular
             </h3>
-            <BlogPost
+            {/* <BlogPost
               title="Development Timeline for this Website"
               excerpt="What I plan to do with this personal site"
               slug="timeline"
-            />
+            /> */}
             {/* <BlogPost
               title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
               excerpt="A deep-dive on everything I've learned in the past year building style guides, design systems, component libraries, and their best practices."
