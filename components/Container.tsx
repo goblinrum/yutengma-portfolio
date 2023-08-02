@@ -48,7 +48,6 @@ export default function Container(props) {
     <div className="bg-gray-50 dark:bg-gray-900">
       <Head>
         <title>{meta.title}</title>
-        <script defer data-domain="yutengma.me" src="https://wednesdays.ddns.net/js/script.js"></script>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
         <meta property="og:url" content={`https://yutengma.me${router.asPath}`} />
