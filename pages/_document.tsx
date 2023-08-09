@@ -4,6 +4,7 @@ export default function Document(props) {
   return (
     <Html lang="en">
       <Head>
+        <script defer data-domain="yutengma.me" src="http://wednesdays.ddns.net/js/script.js"></script>
         <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
         <link href="/static/favicons/site.webmanifest" rel="manifest" />
         <link
