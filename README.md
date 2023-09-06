@@ -14,7 +14,5 @@ pnpm dev
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Sanity](https://www.sanity.io/)
-- [PocketBase](https://pocketbase.io/)
 
-The site itself is still under heavy construction. The plan is to evetually move everything that's hardcoded into a database. Combined with a 
-simple auth system, I should be able to log in and change all the fields. Other users can also log in and play around with my demo apps. 
+The site itself is still under heavy construction. The design is to change soon<sup>TM</sup> to a custom design, provided I actually have time to sit down and do the design.
