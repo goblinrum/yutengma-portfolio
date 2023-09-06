@@ -42,7 +42,7 @@ export default function Home() {
             A bit about me:
           </h6>
           <div className="text-gray-600 dark:text-gray-400 mb-8">
-            <li>I am currently interning at AMD (Xilinx) as a Systems Design Engineer Intern.</li>
+            <li>I am currently a Lab TA for EECS 16B: Designing Information Devices and Systems II.</li>
             <li>Most of my experience is in backend development, specifically in <em>Django, Express/Node and RESTful APIs</em>. </li>
             <li>I am also interested in lower-level systems, security, and VLSI.</li>
           </div>

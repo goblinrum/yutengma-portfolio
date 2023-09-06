@@ -26,12 +26,6 @@ export default function Footer() {
           >
             Home
           </Link>
-          <Link
-            href="/about"
-            className="text-gray-500 hover:text-gray-600 transition"
-          >
-            About
-          </Link>
         </div>
         <div className="flex flex-col space-y-4">
           <ExternalLink href="https://github.com/goblinrum">GitHub</ExternalLink>

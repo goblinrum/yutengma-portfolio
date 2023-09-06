@@ -11,6 +11,9 @@ export default function Teaching() {
                     <p>I love to teach! Here are some of my experiences. I might post some of my teaching materials as I polish them more.</p>
                     <h3><a href='https://eecs16b.org/' className='text-blue-600'>EECS16B: Designing Information Devices and Systems II</a></h3> 
                         <h6 className='text-gray-500 dark:text-gray-300'><em>January 2023 - Present</em></h6>
+                        <p> I am now a Lab TA for the Fall 2023 semester. In addition to my previous duties, I also help develop content for the course. This involves improving the current
+                            lab material, lab reports, and lab notes for students.
+                        </p>
                         <p> I am a Lab ASE for EECS16B for the Spring 2023 semester. This lab involves building the S1XT33N Robot Car (as outlined in my post <a href='https://yutengma.me/projects/sixteen' className='text-blue-600'>here</a>), 
                             and I am excited to teach students how to build their own robot car! I will update this page as the semester progresses. 
                         </p>

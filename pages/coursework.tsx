@@ -9,6 +9,12 @@ export default function Coursework() {
         </h1>
         <div className="mb-8 prose dark:prose-dark leading-6">
             <h2>Coursework</h2>
+            <h4>Fall 2023</h4>
+            <ul>
+                <li>EE 140: Linear Integrated Circuits</li>
+                <li>EECS 149: Embedded and Cyber Physical Systems</li>
+                <li>CS 169: Software Engineering</li>
+            </ul>
             <h4>Spring 2023</h4>
             <ul>
                 <li>CS 152: Computer Architecture and Engineering</li>

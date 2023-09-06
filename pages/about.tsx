@@ -35,6 +35,18 @@ export default function About() {
           and even analog circuits. I love the feeling of building something with my own hands and making it work.
           </p>
           <h2>Industry Experience</h2>
+          <h4>Systems Design Engineer Intern at {' '}
+            <a href="https://www.amd.com/en.html">AMD</a>
+          </h4>
+          <h6 className='text-gray-500 dark:text-gray-300'><em>May 2023 - August 2023</em></h6>
+          <p>My first foot in the door in terms of hardware and systems endeavors. This particular experienced allowed me to combine my 
+             background in software to build and improve infrastructure for a hardware product. It also made me want to be more involved in
+             the hardware world. Here are a few things that I did as part of the process:</p>
+          <ul>
+            <li>Developed an automated end-to-end testing for a FMEDA metrics analysis tool using Pytest and Github Actions</li>
+            <li>Implemented concurrent processing and code optimizations to realize a 12x speedup versus previous code</li>
+            <li>Worked on internal FMEDA process feature development with Synopsys PrimeTime and TCL, embedding self checks and enhancing netlist extraction capabilities</li>
+          </ul>
           <h4>Software Engineer at {' '}
             <a href="https://tecmend.com">Tecmend</a>
           </h4>
@@ -67,7 +79,7 @@ export default function About() {
             <li>Learned how efficient algorithms and design apply to the medical fields</li>
           </ul>
           <h2>Activities</h2>
-          <h4><a href='https://ieee.berkeley.edu/'>IEEE Berkeley</a>{' '}Student Branch - Officer</h4>
+          <h4><a href='https://ieee.berkeley.edu/'>IEEE Berkeley</a>{' '}Student Branch - Director of Technical Operations</h4>
           <h6 className='text-gray-500 dark:text-gray-300'><em>September 2021 - Present</em></h6>
           <p>I started out as a website officer. I was tasked to do the following: </p>
             <ul>
@@ -80,6 +92,12 @@ export default function About() {
               <li>Lead a student-facing project team to work on Berkeley Bias, a MERN stack forum site for Berkeley students.</li>
               <li>Teach the project team basic software engineering skills including Git, Unit/Integration testing, MERN, and Docker. </li>
               <li>Help with internal organization of a campus-wide hackathon for Spring 2023.</li>
+            </ul>
+            I now lead the Tech-Ops branch, where I manage the following:
+            <ul>
+              <li>Manage the Tech-Ops team and its projects, communicating with cross-club point of contacts</li>
+              <li>Help run internal logistics and manage the office space</li>
+              <li>Organize club-sponsored events such as hack days</li>
             </ul>
           
         </div>
