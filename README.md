@@ -16,3 +16,6 @@ pnpm dev
 - [Sanity](https://www.sanity.io/)
 
 The site itself is still under heavy construction. The design is to change soon<sup>TM</sup> to a custom design, provided I actually have time to sit down and do the design.
+
+### A note about precommit (so I don't forget)
+I'm using [gitleaks](https://github.com/gitleaks/gitleaks) to check this before making it public. I added a pre-commit locally to check using `pip install pre-commit` then `pre-commit install` with the current yaml config in the repo.
