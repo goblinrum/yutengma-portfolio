@@ -79,6 +79,7 @@ export default function Container(props) {
             <NavItem href="/coursework" text="Academics" />
             <NavItem href="/teaching" text="Teaching" />
             <NavItem href="/blog" text="Blog" />
+            <NavItem href="https://calendly.com/ryan-ma3011/30min" text="Meet" />
           </div>
           <button
             aria-label="Toggle Dark Mode"
